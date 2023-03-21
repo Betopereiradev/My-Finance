@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Manrope', sans-serif;
+
+    --cor-destaque: rgb(214, 75, 194);
+    --cor-texto: #25282C;
+
+    --fundo-laranja: #FFF2E5;
+    --fundo-roxo: #FFDFF6;
+    --fundo-verde: #DDFFE7;
+    --fundo-vermelho: #FFEBEA;
+}
+
+body {
+    font-size: 1.6rem;
+
+    color: var(--cor-texto);
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.divisa {
+    background-color: var(--cor-texto);
+    opacity: 20%;
+
+    height: 2px;
+    width: 100%;
+
+    border-radius: 5px;
+}
+
+input {
+    border: none;
+    background-color: #F0F0F0;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    opacity: 0.7;
+    outline: 0;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.s-bet {
+    justify-content: space-between;
+}
+
+.info img{
+    cursor: pointer;
+}
+
+.info-flutuante {
+    display: none;
+    position: absolute;
+    /* width: 400px;
+    height: 200px; */
+    background-color: rgb(216, 216, 216);
+    padding: 20px;
+    border-radius: 14px;
+    margin-top: 10px;
+    margin-right: 70px;
+    
+}
+.info:hover + .info-flutuante {
+    display: block;
+}
+
+.bg-laranja {
+    background-color: var(--fundo-laranja);
+}
+.bg-roxo {
+    background-color: var(--fundo-roxo);
+}
+.bg-verde {
+    background-color: var(--fundo-verde);
+}
+.bg-vermelho {
+    background-color: var(--fundo-vermelho);
+}

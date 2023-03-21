@@ -1,0 +1,84 @@
+@import 'geral.css';
+
+aside {
+    background-color: #F1F3F4;
+
+    width: 20%;
+    height: 100vh;
+
+    /* position: fixed; */
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--cor-destaque);
+    font-size: 3rem;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 12px;
+    
+    width: 100%;
+}
+
+.nav-item a {
+    padding-inline: 30px; 
+    color: var(--cor-texto);
+    opacity: 70%;
+    font-size: 1.6rem;
+    line-height: 20px;
+
+    width: 100%;
+}
+
+.nav-item img {
+    opacity: 70%;
+}
+
+.nav-item:hover {
+    background-color: white;
+    border-radius: 5px;
+}
+.nav-item a:hover {
+    color: var(--cor-destaque);
+    font-weight: bold;
+    opacity: 100%;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.foto-usuario {
+    background-color: rgb(180, 180, 180);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sair-usuario {
+    cursor: pointer;
+}

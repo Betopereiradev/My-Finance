@@ -1,0 +1,11 @@
+@import 'dashboard.css';
+@import 'menu.css';
+
+body {
+    display: flex;
+}
+
+main {
+    width: 100%;
+}
+

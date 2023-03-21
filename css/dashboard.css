@@ -1,0 +1,126 @@
+@import 'geral.css';
+
+.dashboard {
+    padding: 20px;
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: space-evenly; */
+    gap: 30px;
+}
+
+.parte-pesquisa {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.parte-balanco {
+    /* border: solid 2px blue; */
+    width: 100%;
+}
+.balanco-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.balanco {
+    border: solid 1px #DDD;
+    border-radius: 14px;
+    width: 25rem;
+    height: 18rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 10px;
+}
+
+.balanco-ico {
+    /* background-color: var(--fundo-laranja); */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.balanco-info {
+    width: 100%;
+    text-align: center;
+}
+.balanco-info p {
+    color: var(--cor-texto);
+    opacity: 0.8;
+    font-size: 1.8rem;
+}
+.balanco-info h2 {
+    font-size: 3rem;
+}
+
+.grafico-cartoes {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.parte-grafico {
+    border: solid 1px #DDD;
+    border-radius: 10px;
+    margin-left: 5px;
+
+    width: 60%;
+    height: 40rem;
+    padding: 20px;
+}
+
+.parte-cartoes {
+    border: solid 1px #DDD;
+    border-radius: 14px;
+    margin-right: 10px;
+    width: 35%;
+    height: 40rem;
+    padding: 20px;
+}
+
+.cartoes {
+    width: 100%;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.cartao {
+    width: 100%;
+    height: 140px;
+    border-radius: 14px;
+
+    padding: 20px;
+
+    background: #f953c6;
+    background: -webkit-linear-gradient(to right, rgb(248, 193, 233), #f953c6);
+    background: linear-gradient(to right, rgb(214, 75, 194), #f953c6);
+
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/index.css">
+
+    <!-- Grafico -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <aside>
+        <nav>
+            <div class="logo">
+                <h1>My Finance</h1>
+            </div>
+            <ul>
+                <li class="nav-item">
+                    <img src="img/dashboard.png" alt="">
+                    <a href="#">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <img src="img/analise.png" alt="">
+                    <a href="#">Comparativo</a>
+                </li>
+                <li class="nav-item">
+                    <img src="img/carteira.png" alt="">
+                    <a href="#">Minha Carteira</a>
+                </li>
+                <li class="nav-item">
+                    <img src="img/conta.png" alt="">
+                    <a href="#">Conta</a>
+                </li>
+                <li class="nav-item">
+                    <img src="img/config.png" alt="">
+                    <a href="#">Configurações</a>
+                </li>
+                <li class="divisa">
+                </li>
+                <li class="nav-item">
+                    <img src="img/seguranca.png" alt="">
+                    <a href="#">Segurança</a>
+                </li>
+                <li class="nav-item">
+                    <img src="img/ajuda.png" alt="">
+                    <a href="#">Ajuda</a>
+                </li>
+                <li class="nav-item dark-mode">
+                    <img src="img/darkmode.png" alt="">
+                    <a href="#">Modo Escuro</a>
+                    <input type="checkbox">
+                </li>
+            </ul>
+        </nav>
+
+        <div class="usuario">
+            <div class="foto-usuario">
+                <img src="img/ilustrativa.png" alt="">
+            </div>
+            <div class="id-usuario">
+                <h4>Alberto Pereira</h4>
+            </div>
+            <div class="sair-usuario">
+                <img src="img/setabaixo.png" alt="">
+            </div>
+        </div>
+    </aside>
+
+    <main>
+
+        <section class="dashboard">
+            <div class="parte-pesquisa">
+                <h2>Dashboard</h2>
+                <input type="search" placeholder="Pesquise por algo..">
+            </div>
+
+            <div class="parte-balanco">
+                <div class="balanco-wrapper">
+                    <div class="balanco">
+                        <div class="balanco-ico bg-laranja">
+                            <img src="img/total.png" alt="">
+                        </div>
+                        <div class="balanco-info">
+                            <p>Total </p>
+                            <h2>$12.245</h2>
+                        </div>
+                    </div>
+                    <div class="balanco">
+                        <div class="balanco-ico bg-roxo">
+                            <img src="img/balanco.png" alt="">
+                        </div>
+                        <div class="balanco-info">
+                            <p>Em Conta</p>
+                            <h2>$12.245</h2>
+                        </div>
+                    </div>
+                    <div class="balanco">
+                        <div class="balanco-ico bg-verde">
+                            <img src="img/entradas.png" alt="">
+                        </div>
+                        <div class="balanco-info">
+                            <p>Entradas</p>
+                            <h2>$12.245</h2>
+                        </div>
+                    </div>
+                    <div class="balanco">
+                        <div class="balanco-ico bg-vermelho">
+                            <img src="img/saidas.png" alt="">
+                        </div>
+                        <div class="balanco-info">
+                            <p>Saídas
+                            </p>
+                            <h2>$12.245</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grafico-cartoes">
+                <div class="parte-grafico">
+                    <h2>Comparativo</h2>
+
+                    <div>
+                        <canvas id="meu-grafico"></canvas>
+
+                    </div>
+                </div>
+
+                <div class="parte-cartoes">
+                    <div class="d-flex s-bet">
+                        <h2>Cartões</h2>
+                        <img src="img/info-circle.png" class="info">
+                        <div class="info-flutuante">
+                            Aqui é exibido as faturas dos seus cartões
+                        </div>
+                    </div>
+                    <div class="cartoes">
+                        <div class="cartao">
+                            <div class="info-cia d-flex s-bet">
+                                <h3>Nubank</h3>
+                                <p>Todo dia 10</p>
+                            </div>
+                            <div>
+                                <h2>$540.25</h2>
+                            </div>
+                        </div>
+                        <div class="cartao">
+                            <div class="info-cia d-flex s-bet">
+                                <h3>Banco do Brasil</h3>
+                                <p>Todo dia 8</p>
+                            </div>
+                            <div>
+                                <h2>$540.25</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
