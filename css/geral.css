@@ -30,6 +30,32 @@ body {
     height: 100vh;
 }
 
+button {
+    background-color: var(--cor-destaque);
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover {
+    transform: scale(1.1);
+}
+
+select {
+    border: none;
+    background-color: #F0F0F0;
+    border-radius: 5px;
+    padding: 10px;
+    /* width: 300px; */
+    opacity: 0.7;
+    outline: 0;
+
+    cursor: pointer;
+}
+
+
 .divisa {
     background-color: var(--cor-texto);
     opacity: 20%;
@@ -45,15 +71,22 @@ input {
     background-color: #F0F0F0;
     border-radius: 5px;
     padding: 10px;
-    width: 300px;
+    /* width: 300px; */
     opacity: 0.7;
     outline: 0;
 }
 
 .d-flex {
     display: flex;
-    flex-direction: row;
     align-items: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.gap-10 {
+    gap: 10px;
 }
 
 .s-bet {

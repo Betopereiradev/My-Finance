@@ -78,10 +78,65 @@
     <main>
 
         <section class="dashboard">
-            <div class="parte-pesquisa">
+            <div class="parte-cadastro">
                 <h2>Dashboard</h2>
-                <input type="search" placeholder="Pesquise por algo..">
+                <button id="abrirModalTransacao">Registrar Transação</button>
             </div>
+
+            <!-- MODAL DE TRANSAÇÃO -->
+            <div id="modalRegistroTransacao">
+                <div class="form-transacao">
+
+                    <div class="head-modal">
+                        <div>
+                        </div>
+                        <h2>Insira os dados da transação</h2>
+                        <button id="fecharModalTransacao">
+                            Sair
+                        </button>
+                    </div>
+
+                    <!-- Valor e nome -->
+                    <div class="d-flex gap-10">
+                        <div class="d-flex flex-col gap-10">
+                            <label>Nome</label>
+                            <input type="text" id="nomeTransacao" placeholder="Salário, fatura, conta de luz...">
+                        </div>
+
+                        <div class="d-flex flex-col gap-10">
+                            <label>Valor</label>
+                            <input type="number" id="valorTransacao" placeholder="1234">
+                        </div>
+                    </div>
+
+                    <!-- Data e tipo -->
+                    <div class="d-flex gap-10">
+                        <div class="d-flex flex-col gap-10">
+                            <label>Data</label>
+                            <input type="date" name="" id="dataTransacao">
+                        </div>
+
+                        <div class="d-flex flex-col gap-10">
+                            <label>Tipo</label>
+                            <select name="" id="tipoTransacao">
+                                <option value="entrada">Entrada</option>
+                                <option value="saida">Saída</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <!-- Botões -->
+                    <div class="d-flex flex-col gap-10">
+                        <button id="registrarTransacao">Registrar</button>
+
+                        <div id="aviso-popup">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM MODAL DE TRANSAÇÃO -->
+
 
             <div class="parte-balanco">
                 <div class="balanco-wrapper">
@@ -90,8 +145,8 @@
                             <img src="img/total.png" alt="">
                         </div>
                         <div class="balanco-info">
-                            <p>Total </p>
-                            <h2>$12.245</h2>
+                            <p>Total</p>
+                            <h2 id="total-balanco">0</h2>
                         </div>
                     </div>
                     <div class="balanco">
@@ -100,7 +155,7 @@
                         </div>
                         <div class="balanco-info">
                             <p>Em Conta</p>
-                            <h2>$12.245</h2>
+                            <h2 id="conta-balanco">0</h2>
                         </div>
                     </div>
                     <div class="balanco">
@@ -109,7 +164,7 @@
                         </div>
                         <div class="balanco-info">
                             <p>Entradas</p>
-                            <h2>$12.245</h2>
+                            <h2 id="entradas-balanco">0</h2>
                         </div>
                     </div>
                     <div class="balanco">
@@ -119,7 +174,7 @@
                         <div class="balanco-info">
                             <p>Saídas
                             </p>
-                            <h2>$12.245</h2>
+                            <h2 id="saidas-balanco">0</h2>
                         </div>
                     </div>
                 </div>
