@@ -65,10 +65,7 @@ fechar.onclick = function () {
   modal.style.display = "none";
 };
 
-// Valores atuais no dashboard
-// Começa zerado
-
-// Função para registrar a transação
+// Pega os valores atuais do dashboard
 const botaoRegistrar = document.getElementById("registrarTransacao");
 const saida = document.getElementById("saidas-balanco");
 const entrada = document.getElementById("entradas-balanco");
@@ -96,8 +93,13 @@ document.addEventListener("DOMContentLoaded", function () {
   emConta.textContent = "R$ " + emContaArmazenado;
 });
 
+// Adicionar transação
 botaoRegistrar.addEventListener("click", function () {
+  var nomeTransacao = document.getElementById("nomeTransacao").value;
   var tipoTransacao = document.getElementById("tipoTransacao").value;
+  var dataTransacao = document.getElementById("dataTransacao").value;
+  var valorTransacao = document.getElementById("valorTransacao").value;
+
   if (tipoTransacao == "entrada") {
     var valorTransacao = document.getElementById("valorTransacao").value;
     valorTransacao = parseFloat(valorTransacao);
@@ -111,7 +113,6 @@ botaoRegistrar.addEventListener("click", function () {
     // Atualizar o valor exibido na página
     entrada.textContent = "R$ " + valorAtualEntrada.toFixed(2);
   } else if (tipoTransacao == "saida") {
-    var valorTransacao = document.getElementById("valorTransacao").value;
     valorTransacao = parseFloat(valorTransacao);
 
     // Atualizar o valor atual
@@ -131,6 +132,7 @@ botaoRegistrar.addEventListener("click", function () {
   localStorage.setItem("emConta", saldoEmConta);
 
   // Avisa que foi cadastrada
+  // Arrumar, pois só aparece a primeira vez
   const aviso = document.getElementById("aviso-popup");
   aviso.textContent = "Transação cadastrada com sucesso.";
 
